@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+    background-color: #12181B;
+}
+.background{
+    background-color: #12181B;
+    padding-top: 1px;
+    height: 100vh;
+}
+@keyframes flickerAnimation{
+
+    0% {color: chartreuse; }
+    50%{color:crimson}
+    100% {color: chartreuse;} 
+}
+.title{
+    text-align: center;
+    font-size: 42px;
+    margin-top: 5%;
+}
+.title h1{
+    animation: flickerAnimation 1s infinite 0.5s ;
+    text-shadow: 2px 2px 4px white;
+}
+
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide{
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 300px;
+}
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.playerX{
+    color: blue;
+}
+.playerO{
+    color:yellow
+}
+#reset {
+    background-color: #FF3860;
+}
